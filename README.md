@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ohio Enterprise
 
-## Getting Started
+**Authorized Electrical Supplier** in MIDC Bhosari, Pune.
 
-First, run the development server:
+We are a leading supplier of industrial electrical products, partnering with top global brands to power your projects with quality and reliability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ohio Enterprise specializes in providing high-quality electrical components including switchgear, wires & cables, connectors, and control panel accessories. We are authorized dealers for major brands like:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Schneider Electric
+- Siemens
+- Polycab
+- L&T
+- Connectwell
+- Salzer
+- Elmex
+- And many more...
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+This project is built using modern web technologies for performance and scalability:
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Language**: TypeScript
+- **Icons**: Lucide React
+- **Fonts**: Inter & Oswald (via `next/font`)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💻 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run this project locally:
 
-## Deploy on Vercel
+1.  **Clone the repository:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    git clone https://github.com/ayushvadodariya/ohio-enterprise.git
+    cd ohio-enterprise
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Run the development server:**
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+4.  **Open in Browser:**
+    Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+
+## 📦 Project Structure
+
+- `app/`: Contains the main application routes and pages.
+- `components/`: Reusable UI components (Shared & UI-specific).
+- `data/`: Static data files for products and brands.
+- `public/`: Static assets like images and branding materials.
+
+## 📞 Contact Us
+
+- **Phone**: +91 9408867007
+- **Email**: sales@ohiogroup.in
+- **Address**: Plot No J-PAP 172, Shop No.2, 2nd Floor, Bharat Complex, Near Quality Circle, MIDC, Bhosari, Pune - 411026.
+
+---
+
+© 2026 Ohio Enterprise. All rights reserved.

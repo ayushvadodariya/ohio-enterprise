@@ -11,16 +11,9 @@ import BrandLogo from "@/components/shared/BrandLogo";
 
 // List of specific brands for the vertical slider
 // List of specific brands for the vertical slider
-const premiumPartners = [
-  { name: "Dowell's", logo: "/brands/dowells.jpeg" },
-  { name: "Crompton", logo: "/brands/crompton.jpeg" },
-  { name: "Lauritz Knudsen", logo: "/brands/lauritz-knudsen.jpeg" },
-  { name: "Legrand", logo: "/brands/legrand.jpeg" },
-  { name: "Omron", logo: "/brands/omron.jpeg" },
-  { name: "Salzer", logo: "/brands/salzer.jpeg" },
-  { name: "Schneider Electric", logo: "/brands/schneider-electric.jpeg" },
-  { name: "Siemens", logo: "/brands/siemens-ingenuity-for-life.jpeg" },
-];
+const premiumPartners = clientBrands.filter(b => 
+  ["lt", "schneider", "siemens", "legrand", "polycab", "finolex", "dowells", "crompton", "philips", "omron", "bosch", "dewalt"].includes(b.id.toString())
+);
 
 export default function Home() {
   const featuredProducts = productsData.map(cat => cat.products[0]).filter(Boolean).slice(0, 4);

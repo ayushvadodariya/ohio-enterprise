@@ -41,7 +41,7 @@ export default function BrandLogo({ name, fallbackSrc, className, priority = fal
   return (
     <div className={`relative ${className}`}>
       <Image
-        src={errored ? fallbackSrc : imgSrc}
+        src={(errored || !imgSrc) ? fallbackSrc : imgSrc}
         alt={name}
         fill
         className="object-contain"

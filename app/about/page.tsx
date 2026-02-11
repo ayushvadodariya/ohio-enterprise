@@ -23,7 +23,7 @@ export default function AboutPage() {
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl">
-               <Image 
+               <Image
                  src="https://placehold.co/800x600/0056b3/ffffff?text=Our+Warehouse"
                  alt="Warehouse"
                  fill

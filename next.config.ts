@@ -1,3 +1,4 @@
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -39,6 +40,7 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'www.logo.wine' },
       { protocol: 'https', hostname: 'kosmosindia.net' },
       { protocol: 'https', hostname: 'indcdn.indmoney.com' },
+      { protocol: 'https', hostname: 'static.cdnlogo.com' },
     ],
   },
 };

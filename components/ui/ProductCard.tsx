@@ -32,9 +32,9 @@ export default function ProductCard({ product, categoryName }: ProductCardProps)
         <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 leading-tight group-hover:text-primary transition-colors">
           {product.name}
         </h3>
-        <p className="text-sm text-gray-500 mb-4 line-clamp-3 grow">
+        {/* <p className="text-sm text-gray-500 mb-4 line-clamp-3 grow">
             {product.description}
-        </p>
+        </p> */}
         
         <div className="mt-auto pt-4 flex items-center justify-between border-t border-gray-100">
           <a 

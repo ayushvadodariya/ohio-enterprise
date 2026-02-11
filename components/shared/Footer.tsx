@@ -52,10 +52,7 @@ export default function Footer() {
                 <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-1">GST Number</p>
                 <p className="text-lg font-mono font-bold text-white tracking-wide">27HKSPK3643G1ZO</p>
               </div>
-              <div className="bg-white/5 p-4 rounded-lg border border-white/10">
-                <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-1">Proprietor</p>
-                <p className="text-base font-bold text-white">KORADIYA HITESH</p>
-              </div>
+
             </div>
           </div>
         </div>

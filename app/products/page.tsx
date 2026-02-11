@@ -28,7 +28,7 @@ export default function ProductsPage() {
       </div>
       
       <div className="container-custom flex flex-col md:flex-row gap-8">
-        <div className="w-full md:w-64 flex-shrink-0">
+        <div className="w-full md:w-64 shrink-0">
            <ProductSidebar categories={categories} />
         </div>
         
@@ -40,7 +40,7 @@ export default function ProductsPage() {
                 <a href={`/products/${category.slug}`} className="text-sm font-sans text-primary hover:underline font-normal">View All</a>
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {category.products.slice(0, 3).map((product, idx) => (
+                {category.products.map((product, idx) => (
                   <ProductCard key={idx} product={product} categoryName={category.category} />
                 ))}
               </div>

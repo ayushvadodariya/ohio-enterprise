@@ -1,12 +1,12 @@
-# Ohio Enterprise
+# OHIO ENTERPRISE
 
-**Authorized Electrical Supplier** in MIDC Bhosari, Pune.
+**Authorized Electrical Supplier** in Pune.
 
 We are a leading supplier of industrial electrical products, partnering with top global brands to power your projects with quality and reliability.
 
 ## 🚀 Overview
 
-Ohio Enterprise specializes in providing high-quality electrical components including switchgear, wires & cables, connectors, and control panel accessories. We are authorized dealers for major brands like:
+OHIO ENTERPRISE specializes in providing high-quality electrical components including switchgear, wires & cables, connectors, and control panel accessories. We are authorized dealers for major brands like:
 
 - Schneider Electric
 - Siemens
@@ -68,8 +68,8 @@ To run this project locally:
 
 - **Phone**: +91 9408867007
 - **Email**: sales@ohiogroup.in
-- **Address**: Plot No J-PAP 172, Shop No.2, 2nd Floor, Bharat Complex, Near Quality Circle, MIDC, Bhosari, Pune - 411026.
+- **Address**: Plot No J-PAP 172, Shop No.2, 2nd Floor, Bharat Complex, Near Quality Circle, MIDC, Bhosari Pune - 411026.
 
 ---
 
-© 2026 Ohio Enterprise. All rights reserved.
+© 2026 OHIO ENTERPRISE. All rights reserved.

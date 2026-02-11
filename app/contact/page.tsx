@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Mail, MapPin, Phone, Building2, User } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Ohio Enterprise',
+  title: 'Contact Us | OHIO ENTERPRISE',
   description: 'Get in touch for quotes and inquiries.',
 };
 
@@ -32,7 +32,7 @@ export default function ContactPage() {
               PLOT NO J-PAP 172, SHOP NO.2,<br />
               2nd FLOOR, BHARAT COMPLEX,<br />
               NEAR QUALITY CIRCLE, MIDC,<br />
-              BHOSARI, PUNE - 411026
+              BHOSARI Pune - 411026
             </p>
           </div>
 

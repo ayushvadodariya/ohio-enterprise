@@ -6,7 +6,7 @@ export const brands = [
     category: "Wires & Cables",
     description: "Polycab Wires & Cables: High-quality, durable solutions for all your wiring needs.",
     slug: "polycab",
-    image: "https://companieslogo.com/img/orig/POLYCAB.NS_BIG-75d2f870.png?t=1729362040"
+    image: "/brands/polycab.jpg"
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const brands = [
 ];
 
 export const clientBrands = [
-  { id: 1, name: "POLYCAB", logo: "https://companieslogo.com/img/orig/POLYCAB.NS_BIG-75d2f870.png?t=1729362040" },
+  { id: 1, name: "POLYCAB", logo: "/brands/polycab.jpg" },
   { id: 2, name: "SCHNEIDER", logo: "/brands/schneider-electric.jpeg" },
   { id: 3, name: "SIEMENS", logo: "/brands/siemens-ingenuity-for-life.jpeg" },
   { id: 4, name: "LAURITZ KNUDSEN", logo: "/brands/lauritz-knudsen.jpeg" },

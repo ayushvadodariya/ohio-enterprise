@@ -22,13 +22,12 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
-            <div className="w-10 h-10 bg-primary flex items-center justify-center rounded text-white font-bold text-xl">
-              O
+          {/* Logo */}
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-4" onClick={() => setIsOpen(false)}>
+            <div className="relative h-16 w-48">
+               <img src="/icon.jpg" alt="OHIO ENTERPRISE" className="h-full w-full object-contain object-left" />
             </div>
-            <span className="text-2xl font-bold text-primary tracking-tight">
-              Ohio<span className="text-secondary">Enterprise</span>
-            </span>
           </Link>
 
           {/* Desktop Nav */}

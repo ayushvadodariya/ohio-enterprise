@@ -24,8 +24,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Ohio Enterprise | Electrical Supplier in MIDC Bhosari, Pune",
-  description: "Ohio Enterprise - Authorized Electrical Supplier in MIDC Bhosari, Pune. We supply industrial electrical products from top brands matching your exact needs.",
+  title: "OHIO ENTERPRISE | Electrical Supplier in  Pune",
+  description: "OHIO ENTERPRISE - Authorized Electrical Supplier in  Pune. We supply industrial electrical products from top brands matching your exact needs.",
   icons: {
     icon: "/icon.jpg",
   },

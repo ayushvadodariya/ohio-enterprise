@@ -4,7 +4,7 @@ import ProductCard from "@/components/ui/ProductCard";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "All Products | Ohio Enterprise",
+  title: "All Products | OHIO ENTERPRISE",
   description: "Browse our complete range of electrical products including Switchgear, Wires, Connectors, and more.",
 };
 

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'About Us | Ohio Enterprise',
-  description: 'Learn about Ohio Enterprise, your trusted electrical wholesaler.',
+  title: 'About Us | OHIO ENTERPRISE',
+  description: 'Learn about OHIO ENTERPRISE, your trusted electrical wholesaler.',
 };
 
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div className="bg-gray-50 min-h-screen pb-20">
       <div className="bg-primary text-white py-16 mb-12">
         <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">About Ohio Enterprise</h1>
+          <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">About OHIO ENTERPRISE</h1>
           <p className="text-blue-100 text-lg max-w-2xl mx-auto">
             Powering industries and homes with quality electrical solutions since 2010.
           </p>
@@ -34,7 +34,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6 font-display">Our Story</h2>
             <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-              Ohio Enterprise began with a simple mission: to provide high-quality electrical components to contractors and industries at fair prices. Over the last decade, we have grown from a small shop to a leading wholesaler in the region, partnering with global brands like L&T, Siemens, and Schneider.
+              OHIO ENTERPRISE began with a simple mission: to provide high-quality electrical components to contractors and industries at fair prices. Over the last decade, we have grown from a small shop to a leading wholesaler in the region, partnering with global brands like L&T, Siemens, and Schneider.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6 text-lg">
               We understand the critical nature of electrical infrastructure. That's why we don't just sell products; we provide technical expertise to ensure you get the right solution for your project.

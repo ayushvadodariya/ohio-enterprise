@@ -1,4 +1,7 @@
 
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Truck, ShieldCheck, Zap } from "lucide-react";
@@ -6,8 +9,29 @@ import ProductCard from "@/components/ui/ProductCard";
 import { productsData, clientBrands } from "@/data/data";
 import BrandLogo from "@/components/shared/BrandLogo";
 
+// List of specific brands for the vertical slider
+// List of specific brands for the vertical slider
+const premiumPartners = [
+  { name: "Dowell's", logo: "/brands/dowells.jpeg" },
+  { name: "Crompton", logo: "/brands/crompton.jpeg" },
+  { name: "Lauritz Knudsen", logo: "/brands/lauritz-knudsen.jpeg" },
+  { name: "Legrand", logo: "/brands/legrand.jpeg" },
+  { name: "Omron", logo: "/brands/omron.jpeg" },
+  { name: "Salzer", logo: "/brands/salzer.jpeg" },
+  { name: "Schneider Electric", logo: "/brands/schneider-electric.jpeg" },
+  { name: "Siemens", logo: "/brands/siemens-ingenuity-for-life.jpeg" },
+];
+
 export default function Home() {
   const featuredProducts = productsData.map(cat => cat.products[0]).filter(Boolean).slice(0, 4);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % premiumPartners.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
   
   const features = [
     {
@@ -35,31 +59,86 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-linear-to-r from-primary to-blue-800 text-white overflow-hidden py-24 lg:py-32">
-        <div className="container-custom relative z-10 flex flex-col items-start gap-6">
-          <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-sm font-semibold uppercase tracking-wider backdrop-blur-sm border border-white/20">
-            Trusted Electrical Wholesaler
+      {/* Vertical Auto-Slider Section */}
+      <section className="bg-white border-b border-gray-100">
+          <div className="container-custom">
+            <div className="flex flex-col items-center justify-center max-w-4xl mx-auto">
+                <div className="relative w-full overflow-hidden h-[300px] md:h-[400px] pt-5">
+                    {/* <h2 className="text-3xl md:text-4xl text-center font-bold text-gray-900 mt-2 mb-4">We Are</h2>
+                    <p className="text-gray-700 text-xl text-center">Trusted Sellers & Stockists</p> */}
+                    
+                    <div className="relative w-full h-[200px] md:h-[280px] flex items-center justify-center">
+                        {premiumPartners.map((partner, index) => (
+                            <div 
+                                key={index}
+                                className={`absolute inset-0 flex flex-col items-center justify-center transition-all duration-700 ease-in-out transform ${
+                                    index === currentSlide 
+                                        ? "opacity-100 translate-y-0 scale-100" 
+                                        : "opacity-0 translate-y-8 scale-95"
+                                }`}
+                            >
+                                <div className="relative w-full h-full">
+                                    <BrandLogo 
+                                        name={partner.name}
+                                        fallbackSrc={partner.logo}
+                                        className="w-full h-full"
+                                        priority={true}
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Navigation Dots */}
+                    <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-3 z-10">
+                        {premiumPartners.map((_, idx) => (
+                            <button
+                                key={idx}
+                                onClick={() => setCurrentSlide(idx)}
+                                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                                    idx === currentSlide 
+                                        ? "bg-primary w-6" 
+                                        : "bg-gray-300 hover:bg-primary/50"
+                                }`}
+                                aria-label={`Go to slide ${idx + 1}`}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </div>
           </div>
-          <h1 className="text-5xl lg:text-7xl font-bold font-display leading-tight max-w-4xl">
-            Powering Your <span className="text-secondary">Projects</span> with Quality & Reliability
-          </h1>
-          <p className="text-xl text-gray-200 max-w-2xl leading-relaxed">
-            Ohio Enterprise is a leading supplier of industrial electrical products in MIDC Bhosari, Pune. Get the best deals on top brands.
-          </p>
-          <div className="flex gap-4 mt-6">
-            <Link 
-              href="/products" 
-              className="px-8 py-4 bg-secondary text-white font-bold rounded hover:bg-secondary-dark transition-all flex items-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-1"
-            >
-              Explore Products <ArrowRight size={20} />
-            </Link>
-            <Link 
-              href="/contact" 
-              className="px-8 py-4 bg-white/10 text-white font-bold rounded border border-white/30 hover:bg-white hover:text-primary transition-all backdrop-blur-sm"
-            >
-              Contact Us
-            </Link>
-          </div>
+      </section>
+
+      {/* Hero Section */}
+      <section className="relative bg-linear-to-r from-primary to-blue-800 text-white overflow-hidden py-16 lg:py-24">
+        <div className="container-custom relative z-10 flex flex-col items-center justify-center text-center">
+            <div className="max-w-4xl flex flex-col items-center gap-6">
+              <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-sm font-semibold uppercase tracking-wider backdrop-blur-sm border border-white/20">
+                Trusted Electrical Wholesaler
+              </div>
+              <h1 className="text-4xl lg:text-6xl font-bold font-display leading-tight">
+                Powering Your <span className="text-secondary">Projects</span> with Quality & Reliability
+              </h1>
+              <p className="text-lg text-gray-200 leading-relaxed">
+                OHIO ENTERPRISE is a leading supplier of industrial electrical products in  Pune. Get the best deals on top brands.
+              </p>
+              <div className="flex gap-4 mt-2">
+                <Link 
+                  href="/products" 
+                  className="px-6 py-3 bg-secondary text-white font-bold rounded hover:bg-secondary-dark transition-all flex items-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-1"
+                >
+                  Explore Products <ArrowRight size={20} />
+                </Link>
+                <Link 
+                  href="/contact" 
+                  className="px-6 py-3 bg-white/10 text-white font-bold rounded border border-white/30 hover:bg-white hover:text-primary transition-all backdrop-blur-sm"
+                >
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+
+
         </div>
       </section>
 
@@ -67,8 +146,10 @@ export default function Home() {
       <section className="py-20 bg-gray-50 border-b border-gray-200">
         <div className="container-custom">
            <div className="text-center mb-12">
-             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Authorized Dealers For</h2>
-             <p className="text-gray-600 text-lg">We are proud partners with leading global electrical brands.</p>
+             {/* <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Authorized Stockist Of</h2>
+             <p className="text-gray-600 text-lg">We are proud partners with leading global electrical brands.</p> */}
+            <h2 className="text-3xl md:text-4xl text-center font-bold text-gray-900 mt-2 mb-4">We Are</h2>
+            <p className="text-gray-700 text-xl text-center">Trusted Sellers & Stockists</p>
            </div>
         
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -92,7 +173,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Ohio Enterprise?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose OHIO ENTERPRISE?</h2>
             <p className="text-gray-600 text-lg">We create value through quality products, technical expertise, and exceptional service.</p>
           </div>
           

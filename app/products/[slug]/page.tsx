@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!category) return { title: "Category Not Found" };
 
   return {
-    title: `${category.category} | Ohio Enterprise`,
+    title: `${category.category} | OHIO ENTERPRISE`,
     description: category.description,
   };
 }

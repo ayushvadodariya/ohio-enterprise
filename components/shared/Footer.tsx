@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-3xl font-bold font-display tracking-wide uppercase">Ohio Enterprise</h3>
+            <h3 className="text-3xl font-bold font-display tracking-wide uppercase">OHIO ENTERPRISE</h3>
             <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
               Your trusted partner for high-quality electrical supplies. From industrial switches to home wiring, we power your world with reliability.
             </p>
@@ -32,7 +32,7 @@ export default function Footer() {
             <ul className="space-y-4 text-gray-300 text-sm">
               <li className="flex items-start gap-3 group">
                 <MapPin size={20} className="mt-0.5 shrink-0 text-secondary group-hover:text-white transition-colors" />
-                <span className="leading-snug">PLOT NO J-PAP 172, SHOP NO.2, 2nd FLOOR, BHARAT COMPLEX NEAR QUALITY CIRCLE, MIDC, BHOSARI, PUNE - 411026</span>
+                <span className="leading-snug">PLOT NO J-PAP 172, SHOP NO.2, 2nd FLOOR, BHARAT COMPLEX NEAR QUALITY CIRCLE, MIDC, BHOSARI Pune - 411026</span>
               </li>
               <li className="flex items-center gap-3 group">
                 <Phone size={20} className="shrink-0 text-secondary group-hover:text-white transition-colors" />
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-white/10 mt-12 pt-8 text-center text-gray-400 text-sm">
-          &copy; {currentYear} Ohio Enterprise. All rights reserved.
+          &copy; {currentYear} OHIO ENTERPRISE. All rights reserved.
         </div>
       </div>
     </footer>

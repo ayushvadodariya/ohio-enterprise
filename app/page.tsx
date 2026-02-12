@@ -48,7 +48,9 @@ export default function Home() {
                 Powering Your <span className="text-secondary">Projects</span> with Quality & Reliability
               </h1>
               <p className="text-lg text-gray-200 leading-relaxed">
-                OHIO ENTERPRISE is a leading supplier of industrial electrical products in  Pune. Get the best deals on top brands.
+                <span className="text-secondary">OHIO ENTERPRISE</span> is a leading supplier of industrial electrical products in  Pune.
+                <br />
+                Get the best deals on top brands.
               </p>
               <div className="flex gap-4 mt-2">
                 <Link 
@@ -152,7 +154,7 @@ export default function Home() {
       <section className="py-20 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-blue-900/50 mix-blend-multiply"></div>
         <div className="container-custom relative z-10 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">Start Your Project With Us</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display text-secondary">Start Your Project With Us</h2>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto mb-10">
             Get personalized quotes for bulk orders and project requirements. Our team is ready to assist you.
           </p>

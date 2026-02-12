@@ -14,7 +14,7 @@ const SLIDES = [
   { id: 6, src: "/slides/slide-6.png", alt: "Featured Slide 6" },
   { id: 7, src: "/slides/slide-7.png", alt: "Featured Slide 7" },
   { id: 8, src: "/slides/slide-8.png", alt: "Featured Slide 8" },
-  { id: 8, src: "/slides/slide-11.png", alt: "Featured Slide 11" },
+  { id: 9, src: "/slides/slide-9.png", alt: "Featured Slide 9" },
 ];
 
 export default function MainSlider() {

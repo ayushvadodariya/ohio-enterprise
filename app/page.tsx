@@ -4,9 +4,9 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Truck, ShieldCheck, Zap } from "lucide-react";
 import ProductCard from "@/components/ui/ProductCard";
-import { productsData, clientBrands } from "@/data/data";
-import BrandLogo from "@/components/shared/BrandLogo";
+import { productsData } from "@/data/data";
 import MainSlider from "@/components/shared/MainSlider";
+import BrandMarquee from "@/components/shared/BrandMarquee";
 
 export default function Home() {
   const featuredProducts = productsData.map(cat => cat.products[0]).filter(Boolean).slice(0, 4);
@@ -73,31 +73,7 @@ export default function Home() {
       </section>
 
       {/* Authorized Dealers Section */}
-      <section className="py-20 bg-gray-50 border-b border-gray-200">
-        <div className="container-custom">
-           <div className="text-center mb-12">
-             {/* <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Authorized Stockist Of</h2>
-             <p className="text-gray-600 text-lg">We are proud partners with leading global electrical brands.</p> */}
-            <h2 className="text-3xl md:text-4xl text-center font-bold text-gray-900 mt-2 mb-4">We Are</h2>
-            <p className="text-gray-700 text-xl text-center">Trusted Sellers & Stockists</p>
-           </div>
-        
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {clientBrands.map((brand, idx) => (
-                <div key={idx} className="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex items-center justify-center h-80 hover:shadow-xl transition-shadow duration-300 group">
-                   <div className="relative w-full h-full">
-                      <BrandLogo 
-                        name={brand.name} 
-                        fallbackSrc={brand.logo} 
-                        className="w-full h-full transition-transform duration-300 group-hover:scale-105"
-                        priority={true}
-                      />
-                   </div>
-                </div>
-              ))}
-           </div>
-        </div>
-      </section>
+      <BrandMarquee />
 
       {/* Why Choose Us */}
       <section className="py-20 bg-white">

@@ -1,30 +1,15 @@
 
 "use client";
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Truck, ShieldCheck, Zap } from "lucide-react";
 import ProductCard from "@/components/ui/ProductCard";
 import { productsData, clientBrands } from "@/data/data";
 import BrandLogo from "@/components/shared/BrandLogo";
-
-// List of specific brands for the vertical slider
-// List of specific brands for the vertical slider
-const premiumPartners = clientBrands.filter(b => 
-  ["lt", "schneider", "siemens", "legrand", "polycab", "finolex", "dowells", "crompton", "philips", "omron", "bosch", "dewalt"].includes(b.id.toString())
-);
+import MainSlider from "@/components/shared/MainSlider";
 
 export default function Home() {
   const featuredProducts = productsData.map(cat => cat.products[0]).filter(Boolean).slice(0, 4);
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % premiumPartners.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, []);
   
   const features = [
     {
@@ -51,58 +36,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      {/* Vertical Auto-Slider Section */}
-      <section className="bg-white border-b border-gray-100">
-          <div className="container-custom">
-            <div className="flex flex-col items-center justify-center max-w-4xl mx-auto">
-                <div className="relative w-full overflow-hidden h-[300px] md:h-[400px] pt-5">
-                    {/* <h2 className="text-3xl md:text-4xl text-center font-bold text-gray-900 mt-2 mb-4">We Are</h2>
-                    <p className="text-gray-700 text-xl text-center">Trusted Sellers & Stockists</p> */}
-                    
-                    <div className="relative w-full h-[200px] md:h-[280px] flex items-center justify-center">
-                        {premiumPartners.map((partner, index) => (
-                            <div 
-                                key={index}
-                                className={`absolute inset-0 flex flex-col items-center justify-center transition-all duration-700 ease-in-out transform ${
-                                    index === currentSlide 
-                                        ? "opacity-100 translate-y-0 scale-100" 
-                                        : "opacity-0 translate-y-8 scale-95"
-                                }`}
-                            >
-                                <div className="relative w-full h-full">
-                                    <BrandLogo 
-                                        name={partner.name}
-                                        fallbackSrc={partner.logo}
-                                        className="w-full h-full"
-                                        priority={true}
-                                    />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+      <MainSlider />
 
-                    {/* Navigation Dots */}
-                    <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-3 z-10">
-                        {premiumPartners.map((_, idx) => (
-                            <button
-                                key={idx}
-                                onClick={() => setCurrentSlide(idx)}
-                                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                                    idx === currentSlide 
-                                        ? "bg-primary w-6" 
-                                        : "bg-gray-300 hover:bg-primary/50"
-                                }`}
-                                aria-label={`Go to slide ${idx + 1}`}
-                            />
-                        ))}
-                    </div>
-                </div>
-            </div>
-          </div>
-      </section>
-
-      {/* Hero Section */}
       <section className="relative bg-linear-to-r from-primary to-blue-800 text-white overflow-hidden py-16 lg:py-24">
         <div className="container-custom relative z-10 flex flex-col items-center justify-center text-center">
             <div className="max-w-4xl flex flex-col items-center gap-6">

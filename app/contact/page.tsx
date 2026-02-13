@@ -74,7 +74,6 @@ export default function ContactPage() {
                 <p className="text-xl font-mono font-bold text-gray-800">27HKSPK3643G1ZO</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg flex items-center justify-center gap-3">
-                <User size={20} className="text-secondary" />
                 <div className="text-left">
                   <p className="text-xs text-gray-500 uppercase tracking-widest font-bold mb-1">Proprietor</p>
                   <p className="text-lg font-bold text-gray-800">KORADIYA HITESH</p>

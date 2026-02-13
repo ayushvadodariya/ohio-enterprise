@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-3xl font-bold font-display tracking-wide uppercase text-secondary">OHIO ENTERPRISE</h3>
             <p className=" text-white text-sm leading-relaxed max-w-xs">
-              Your trusted partner for high-quality electrical supplies. From industrial switches to home wiring, we power your world with reliability.
+              Elevate your company with our cutting-edge Electrical Solutions. We’re your Trusted Partner, delivering Reliability and excellence in every Connection.
             </p>
           </div>
           
@@ -32,7 +32,7 @@ export default function Footer() {
             <ul className="space-y-4  text-sm">
               <li className="flex items-start gap-3 group">
                 <MapPin size={20} className="mt-0.5 shrink-0 text-secondary group-hover:text-white transition-colors" />
-                <span className="leading-snug">PLOT NO J-PAP 172, SHOP NO.2, 2nd FLOOR, BHARAT COMPLEX NEAR QUALITY CIRCLE, MIDC, BHOSARI Pune - 411026</span>
+                <span className="leading-snug"> NEAR QUALITY CIRCLE, MIDC, BHOSARI - PUNE (411026)</span>
               </li>
               <li className="flex items-center gap-3 group">
                 <Phone size={20} className="shrink-0 text-secondary group-hover:text-white transition-colors" />

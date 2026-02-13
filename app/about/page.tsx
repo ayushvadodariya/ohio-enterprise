@@ -12,9 +12,6 @@ export default function AboutPage() {
       <div className="bg-primary text-white py-16 mb-12">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">About OHIO ENTERPRISE</h1>
-          <p className="text-blue-100 text-lg max-w-2xl mx-auto">
-            Powering industries and homes with quality electrical solutions since 2010.
-          </p>
         </div>
       </div>
 
@@ -22,22 +19,22 @@ export default function AboutPage() {
         {/* Story Section */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl bg-white">
                <Image
-                 src="https://placehold.co/800x600/0056b3/ffffff?text=Our+Warehouse"
+                 src="/about-us/about-us-1.png"
                  alt="Warehouse"
                  fill
-                 className="object-cover"
+                 className="object-contain"
                />
             </div>
           </div>
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6 font-display">Our Story</h2>
             <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-              OHIO ENTERPRISE began with a simple mission: to provide high-quality electrical components to contractors and industries at fair prices. Over the last decade, we have grown from a small shop to a leading wholesaler in the region, partnering with global brands like L&T, Siemens, and Schneider.
+              OHIO ENTERPRISE began with a simple mission: to provide high-quality electrical components to companies and industries at fair prices. Over the past few years, we have grown from a small shop to a leading wholesaler in the region.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-              We understand the critical nature of electrical infrastructure. That's why we don't just sell products; we provide technical expertise to ensure you get the right solution for your project.
+              We understand the critical nature of electrical infrastructure. That&apos;s why we don&apos;t just sell products; we provide technical expertise to ensure you get the right solution for your project.
             </p>
           </div>
         </section>
@@ -47,7 +44,7 @@ export default function AboutPage() {
           <div className="bg-white p-8 rounded-xl shadow-md border-l-4 border-secondary">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
             <p className="text-gray-600 text-lg">
-              To be the most reliable partner for electrical supplies by ensuring availability, authenticity, and affordability for all our clients.
+              We understand the critical nature of electrical infrastructure. That's why we don't just sell products; we provide technical expertise to ensure you get the right solution for your project.
             </p>
           </div>
           <div className="bg-white p-8 rounded-xl shadow-md border-l-4 border-primary">

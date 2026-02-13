@@ -49,6 +49,7 @@ export default function Navbar() {
               className="px-4 py-2 bg-primary text-white text-sm font-medium rounded hover:bg-primary-dark transition-colors flex items-center gap-2"
             >
               <Phone size={16} />
+              <span className="hidden lg:inline">HITESH KORADIYA&nbsp;</span>
               <span>+91 9408867007</span>
             </a>
           </nav>
@@ -86,7 +87,7 @@ export default function Navbar() {
               className="mx-4 mt-2 px-4 py-3 bg-primary text-white text-center font-bold rounded hover:bg-primary-dark transition-colors flex items-center justify-center gap-2"
             >
               <Phone size={18} />
-              <span>Call Now</span>
+              <span>Call HITESH KORADIYA</span>
             </a>
           </div>
         </div>

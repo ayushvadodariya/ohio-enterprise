@@ -79,7 +79,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose OHIO ENTERPRISE?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose <span className="text-primary">OHIO ENTERPRISE?</span></h2>
             <p className="text-gray-600 text-lg">We create value through quality products, technical expertise, and exceptional service.</p>
           </div>
           

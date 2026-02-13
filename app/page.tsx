@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* Featured Products */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container-custom">
           <div className="flex justify-between items-end mb-12">
             <div>
@@ -124,7 +124,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white relative overflow-hidden">

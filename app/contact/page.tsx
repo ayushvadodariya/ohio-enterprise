@@ -29,10 +29,9 @@ export default function ContactPage() {
             </div>
             <h2 className="text-xl font-bold text-gray-900 mb-4">Visit Us</h2>
             <p className="text-gray-600 leading-relaxed">
-              PLOT NO J-PAP 172, SHOP NO.2,<br />
-              2nd FLOOR, BHARAT COMPLEX,<br />
-              NEAR QUALITY CIRCLE, MIDC,<br />
-              BHOSARI Pune - 411026
+              NEAR QUALITY CIRCLE,<br />
+              MIDC, BHOSARI, <br />
+              PUNE (411026)<br />
             </p>
           </div>
 
@@ -73,11 +72,9 @@ export default function ContactPage() {
                 <p className="text-xs text-gray-500 uppercase tracking-widest font-bold mb-1">GST Number</p>
                 <p className="text-xl font-mono font-bold text-gray-800">27HKSPK3643G1ZO</p>
               </div>
-              <div className="bg-gray-50 p-4 rounded-lg flex items-center justify-center gap-3">
-                <div className="text-left">
-                  <p className="text-xs text-gray-500 uppercase tracking-widest font-bold mb-1">Proprietor</p>
-                  <p className="text-lg font-bold text-gray-800">KORADIYA HITESH</p>
-                </div>
+              <div className="bg-gray-50 p-4 rounded-lg">
+                <p className="text-xs text-gray-500 uppercase tracking-widest font-bold mb-1">Proprietor</p>
+                <p className="text-xl font-mono font-bold text-gray-800">KORADIYA HITESH</p>
               </div>
             </div>
           </div>

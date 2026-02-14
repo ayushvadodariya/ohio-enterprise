@@ -41,9 +41,6 @@ export default function Home() {
       <section className="relative bg-linear-to-r from-primary to-blue-800 text-white overflow-hidden py-16 lg:py-24">
         <div className="container-custom relative z-10 flex flex-col items-center justify-center text-center">
             <div className="max-w-4xl flex flex-col items-center gap-6">
-              <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-sm font-semibold uppercase tracking-wider backdrop-blur-sm border border-white/20">
-                Trusted Electrical Wholesaler
-              </div>
               <h1 className="text-4xl lg:text-6xl font-bold font-display leading-tight">
                 Powering Your <span className="text-secondary">Projects</span> with Quality & Reliability
               </h1>
